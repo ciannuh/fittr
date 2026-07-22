@@ -3,76 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThreadLoop | Clothing Marketplace</title>
+    <title>ThreadLoop | Editorial Clothing Marketplace</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="nav-logo">
-                <a href="index.html">ThreadLoop</a>
+    <div class="site-container">
+        
+        <header class="sidebar-header">
+            <div class="brand-identity">
+                <a href="index.html" class="logo">THREADLOOP</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="browse.html">Browse</a></li>
-                <li><a href="sell.html">Sell</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-    <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Give Your Clothes a Second Life</h1>
-                <p>Buy, sell, or donate pre-loved clothing within a trusted, sustainable marketplace.</p>
-                
-                <div class="search-container">
-                    <input type="text" id="search-bar" placeholder="Search for hoodies, vintage jackets, streetwear...">
-                    <button id="search-btn" type="button">Search</button>
+            <div class="sidebar-search">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button id="search-btn" type="button">→</button>
+            </div>
+        </header>
+
+        <main class="editorial-main">
+            
+            <section class="hero-section">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80" alt="High fashion minimal aesthetic model clothing banner" class="hero-img">
+                    <div class="hero-overlay-text">
+                        <span class="season-tag">HI.2026</span>
+                        <h2>SUMMER COLLEC.</h2>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="featured-products">
-            <h2>Featured Listings</h2>
-            <div class="product-grid">
+            <section class="featured-editorial-grid">
                 
-                <article class="product-card">
-                    <img src="https://via.placeholder.com/250x300" alt="Vintage denim jacket in excellent condition" class="product-img">
-                    <div class="product-info">
-                        <h3>Vintage Denim Jacket</h3>
-                        <p class="product-price">$45.00</p>
-                        <p class="product-desc">Classic blue denim, size L. Minimal wear.</p>
-                        <a href="#" class="btn-view">View Listing</a>
+                <article class="editorial-card text-block">
+                    <div class="card-inner">
+                        <h3>New look</h3>
+                        <p>Discover hand-picked curated streetwear sets and vintage outerwear collections uploaded by our community this week.</p>
+                        <a href="browse.html" class="editorial-link">View Collection</a>
                     </div>
                 </article>
 
-                <article class="product-card">
-                    <img src="https://via.placeholder.com/250x300" alt="Black oversized hoodie, size M" class="product-img">
-                    <div class="product-info">
-                        <h3>Oversized Streetwear Hoodie</h3>
-                        <p class="product-price">$30.00</p>
-                        <p class="product-desc">Super comfy black fleece hoodie, size M.</p>
-                        <a href="#" class="btn-view">View Listing</a>
+                <article class="editorial-card image-block">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="Minimalist fashion trousers and coat preview">
+                    <div class="item-meta">
+                        <span class="item-title">Tailored Autumn Coat</span>
+                        <span class="item-price">$85.00</span>
                     </div>
                 </article>
 
-            </div>
-        </section>
-    </main>
+                <article class="editorial-card image-block">
+                    <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=600&q=80" alt="Streetwear oversized hoodie fashion model preview">
+                    <div class="item-meta">
+                        <span class="item-title">Oversized Knit Hoodie</span>
+                        <span class="item-price">$40.00</span>
+                    </div>
+                </article>
 
-    <footer class="footer-section">
-        <div class="footer-content">
-            <p>&copy; 2026 ThreadLoop Marketplace. Supporting sustainable fashion.</p>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="contact.html">Support</a>
-            </div>
-        </div>
-    </footer>
+            </section>
+
+            <footer class="footer-section">
+                <div class="footer-content">
+                    <p>&copy; 2026 ThreadLoop. Promoting a circular economy through conscious reuse.</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy</a>
+                        <a href="contact.html">Support</a>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
